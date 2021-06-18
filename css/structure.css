@@ -6,41 +6,6 @@ body {
     margin: 0;
 }
 
-@media only screen and (max-width: 668px) {
-    :root {
-        --scale: 0.7;
-        --navBarMargin: 10px;
-        --contentPadding: 12vw;
-    }
-    .navBar {
-        overflow-x: auto;  
-        border-radius: 12px;
-    }
-    .firstContentDiv {
-        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
-    }
-    .secondContentDiv {
-        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%)
-    }
-    .contentBox {
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (min-width: 668px) {
-    :root {
-        --scale: 1;
-        --navBarMargin: 0px;
-        --contentPadding: 6vw;
-    }
-    .firstContentDiv {
-        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
-    }
-    .secondContentDiv {
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
-    }
-}
-
 .navBar {
     width: calc(100% - 2*var(--navBarMargin));
     display: flex;
@@ -58,6 +23,7 @@ body {
     font-size: calc(15px * var(--scale));
     white-space: nowrap;
     text-align: center;
+    outline: none;
 }
 
 .logoDiv {
@@ -150,65 +116,112 @@ body {
     text-align: center;
     margin: 0;
 }
-.section {
-    margin-top: 0;
-    width: 420px;
-    padding: 20px;
-    margin: 20px;
-    font-size: 18px;
-    text-decoration: transparent;
-}
 .contentBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 450px));
 }
 
-@media only screen and (max-width: 950px) and (min-width: 668px) {
-    .contentBox {
-        flex-wrap: wrap;
-    }
-    .section {
-        width: 600px;
-    }
+.contentBox>* {
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: node;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
 }
+
 .ZtereoBOT {
-    background-image: url(https://cdn.discordapp.com/avatars/713718980325539910/01c36f6ac37309befb7b442299f62a19.png?size=2048);
-    background-size: cover;
-    background-attachment: local;
-    background-blend-mode: soft-light;
+    background-image: url("https://imgur.com/azvr3xv.png");
 }
-.WaffleBOT {
+/*.WaffleBOT {
     background-image: url("../images/WaffleBOT.webp");
-    background-size: cover;
-    background-attachment: local;
-    background-blend-mode: soft-light;
 }
 .ZtereoWEBSITE {
     background-image: url("../images/ZtereoWEBSITE.webp");
-    background-size: cover;
-    background-attachment: local;
-    background-blend-mode: soft-light;
 }
 .McShaders {
     background-image: url("../images/mcshader.webp");
-    background-size: cover;
-    background-attachment: local;
-    background-blend-mode: soft-light;
 }
 .McMod {
     background-image: url("../images/pastel_wonderland.webp");
-    background-size: cover;
-    background-attachment: local;
-    background-blend-mode: soft-light;
-}
-.electron {
-    background-image: url("../images/electron.jpg");
-    background-size: cover;
-    background-attachment: local;
-    background-blend-mode: soft-light;
+} */
+.Zterio {
+    background-image: url("https://imgur.com/s0pDDGV.png");
 }
 .link {
     color: var(--text-primary);
     text-decoration-color: var(--text-primary);
+}
+.tag {
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+.githubTag {
+    background-image: url("https://imgur.com/6jxuBGl.jpg");
+}
+.discordTag {
+    background-image: url("https://imgur.com/zelqLyo.png");
+}
+.playTag {
+    background-image: linear-gradient(100deg, rgb(209, 2, 2), rgb(221, 144, 0));
+    text-align: center;
+}
+.what {
+    position: absolute;
+    transform: translate(20%, -80%)
+}
+.warning {
+    position: absolute;
+    margin: 0;
+    font-size: 17px;
+    color: #da8e03;
+}
+@media only screen and (max-width: 668px) {
+    :root {
+        --scale: 0.7;
+        --navBarMargin: 10px;
+        --contentPadding: 12vw;
+    }
+    .navBar {
+        overflow-x: auto;  
+        border-radius: 12px;
+    }
+    .firstContentDiv {
+        clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
+    }
+    .secondContentDiv {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%)
+    }
+    .contentBox {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 550px));
+    }
+    .tag {
+        margin-right: 5px;
+        width: 100px;
+    }
+    .what {
+        transform: translate(5%, -80%);
+    }
+}
+
+@media only screen and (min-width: 668px) {
+    :root {
+        --scale: 1;
+        --navBarMargin: 0px;
+        --contentPadding: 6vw;
+    }
+    .firstContentDiv {
+        clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%)
+    }
+    .secondContentDiv {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%)
+    }
 }

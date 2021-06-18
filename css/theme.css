@@ -8,8 +8,8 @@
         --background: #edf2f7;
         --background2: #a8a8a8;
         --navColor: #ffffff;
-        --accentColor: rgb(112, 169, 189);
-        --background-image: url("./images/light.webp");
+        --accentColor: #70a9bd;
+        --background-image: url("https://i.imgur.com/0vqF4ki.jpg");
     }
 }
 
@@ -21,7 +21,7 @@
         --background2: #2b2b2b;
         --navColor: #363636;
         --accentColor: #add8e6;
-        --background-image: url("./images/dark.webp");
+        --background-image: url("https://imgur.com/A7fHD0V.jpg");
     }
 }
 .navBar {
@@ -52,7 +52,7 @@ body {
     color: var(--accentColor);
 }
 .firstTitle {
-    background: linear-gradient(180deg,#FF0000,#FF7F00,#FFFF00,#00e93a, #01b872,#0000FF,#8B00FF,#FF0000);
+    background: linear-gradient(180deg,#FF0000,#FF7F00,#FFFF00,#00e93a,#01b872,#0000FF,#8B00FF,#FF0000);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
