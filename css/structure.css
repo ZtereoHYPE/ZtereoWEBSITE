@@ -136,20 +136,17 @@ body {
 .ZtereoBOT {
     background-image: url("https://imgur.com/azvr3xv.png");
 }
-/*.WaffleBOT {
-    background-image: url("../images/WaffleBOT.webp");
-}
 .ZtereoWEBSITE {
-    background-image: url("../images/ZtereoWEBSITE.webp");
+    background-image: url("https://imgur.com/u8hW6oF.png");
 }
 .McShaders {
-    background-image: url("../images/mcshader.webp");
+    background-image: url("https://imgur.com/CLuTeTc.png");
 }
-.McMod {
-    background-image: url("../images/pastel_wonderland.webp");
-} */
 .Zterio {
     background-image: url("https://imgur.com/s0pDDGV.png");
+}
+.McMod {
+    background-image: url("https://imgur.com/KIboKgM.png");
 }
 .link {
     color: var(--text-primary);
@@ -169,10 +166,6 @@ body {
 }
 .discordTag {
     background-image: url("https://imgur.com/zelqLyo.png");
-}
-.playTag {
-    background-image: linear-gradient(100deg, rgb(209, 2, 2), rgb(221, 144, 0));
-    text-align: center;
 }
 .what {
     position: absolute;

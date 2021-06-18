@@ -137,3 +137,10 @@ body {
     background-color: var(--background2);
     border-radius: 15px;
 }
+.playTag {
+    background-image: linear-gradient(120deg, var(--accentColor), rgb(0, 109, 199));
+    text-align: center;
+}
+.comingSoonTag {
+    background-image: linear-gradient(100deg, var(--background2), var(--background));
+}
