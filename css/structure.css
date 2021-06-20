@@ -44,7 +44,7 @@ body {
 .logoText {
     display: flex;
     flex-direction: column;
-    font-size: calc(15px * var(--scale)); 
+    font-size: calc(15px * var(--scale));
 }
 
 .logoTextTop {
@@ -93,22 +93,26 @@ body {
 
 .contentTitle {
     margin: 0;
-    font-size: 35px; 
+    font-size: 35px;
 }
+
 .contentText {
     font-size: 20px;
 }
+
 .footer {
     margin-top: 20px;
     font-size: calc(23px*var(--scale));
     text-align: center;
     margin-bottom: 20px;
 }
+
 .footerText {
     padding: 2px;
     font-size: calc(12px*var(--scale));
     margin: 0;
 }
+
 .subtitle {
     padding-left: 20px;
     padding-right: 20px;
@@ -117,6 +121,7 @@ body {
     text-align: center;
     margin: 0;
 }
+
 .contentBox {
     justify-content: center;
     display: grid;
@@ -137,22 +142,28 @@ body {
 .ZtereoBOT {
     background-image: url("https://imgur.com/azvr3xv.png");
 }
+
 .ZtereoWEBSITE {
     background-image: url("https://imgur.com/u8hW6oF.png");
 }
+
 .McShaders {
     background-image: url("https://imgur.com/CLuTeTc.png");
 }
+
 .Zterio {
     background-image: url("https://imgur.com/s0pDDGV.png");
 }
+
 .McMod {
     background-image: url("https://imgur.com/KIboKgM.png");
 }
+
 .link {
     color: var(--text-primary);
     text-decoration-color: var(--text-primary);
 }
+
 .tag {
     width: 128px;
     height: 48px;
@@ -162,22 +173,68 @@ body {
     display: inline-block;
     margin-right: 10px;
 }
+
 .githubTag {
     background-image: url("https://imgur.com/6jxuBGl.jpg");
 }
+
 .discordTag {
     background-image: url("https://imgur.com/zelqLyo.png");
 }
+
 .what {
     position: absolute;
     transform: translate(20%, -80%)
 }
+
 .warning {
     position: absolute;
     margin: 0;
     font-size: 17px;
     color: #da8e03;
 }
+
+.contactDiv {
+    text-align: center;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.contactSection {
+    background-color: blue;
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+}
+/* .contactDivs {
+    width: clamp(100px, 20%, 200px);
+} */
+
+/* .contactBubble {
+    transition: transform .3s;
+    border-radius: 100%;   
+}
+
+.contactBubble:hover {
+    transform: scale(1.1);
+}
+
+.contactBubble:active {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.contactText {
+    color: white;
+    cursor: default;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+} */
+
 @media only screen and (max-width: 668px) {
     :root {
         --scale: 0.7;
@@ -185,7 +242,7 @@ body {
         --contentPadding: 12vw;
     }
     .navBar {
-        overflow-x: auto;  
+        overflow-x: auto;
         border-radius: 12px;
     }
     .firstContentDiv {
@@ -203,6 +260,17 @@ body {
     }
     .what {
         transform: translate(5%, -80%);
+    }
+    .contact {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    }
+    .contactDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSection {
+        width: 200px;
+        background-color: red;
     }
 }
 

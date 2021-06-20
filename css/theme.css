@@ -145,3 +145,6 @@ body {
     background-image: linear-gradient(100deg, var(--background2), var(--background));
     color: var(--text-secondary)
 }
+.contactDiv {
+    color: var(--text-primary);
+}
