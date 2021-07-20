@@ -193,7 +193,12 @@ body {
     font-size: 17px;
     color: #da8e03;
 }
-
+.awarning {
+    /* margin-top: 30px; */
+    padding: 2px;
+    font-size: 14px;
+    color: #da8e03;
+}
 .contactDiv {
     text-align: center;
     display: flex;
@@ -204,11 +209,16 @@ body {
 }
 
 .contactSection {
-    background-color: blue;
-    width: 150px;
-    height: 200px;
+    transition: transform .3s;
     margin-top: 10px;
 }
+.contactSection:hover {
+    transform: scale(1.03);
+}
+.contactPicture {
+    width: 100px;
+}
+
 /* .contactDivs {
     width: clamp(100px, 20%, 200px);
 } */
@@ -218,9 +228,7 @@ body {
     border-radius: 100%;   
 }
 
-.contactBubble:hover {
-    transform: scale(1.1);
-}
+
 
 .contactBubble:active {
     opacity: 0.7;
@@ -269,8 +277,7 @@ body {
         align-items: center;
     }
     .contactSection {
-        width: 200px;
-        background-color: red;
+        width: 220px;
     }
 }
 

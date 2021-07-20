@@ -148,3 +148,19 @@ body {
 .contactDiv {
     color: var(--text-primary);
 }
+.contactSection {
+    background-color: var(--background2);
+    border-radius: 15px;
+    color: var(--text-primary);
+    padding: 1px;
+}
+.noLink:link { text-decoration: none; }
+
+.noLink:visited { text-decoration: none; }
+
+.noLink:hover { text-decoration: none; }
+
+.noLink:active { text-decoration: none; }
+.contactSectionLinkedArea {
+    width: clamp(140px, 200px, 200px);
+}
